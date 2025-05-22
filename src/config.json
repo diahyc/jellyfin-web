@@ -3,33 +3,51 @@
   "multiserver": false,
   "themes": [
     {
-      "name": "Apple TV",
-      "id": "appletv",
-      "color": "#bcbcbc"
-    }, {
-      "name": "Blue Radiance",
-      "id": "blueradiance",
-      "color": "#011432"
-    }, {
-      "name": "Dark",
-      "id": "dark",
-      "color": "#202020",
+      "name": "Zesty (默認)",
+      "id": "Zesty2",
+      "color": "#bcbcbc",
       "default": true
     }, {
-      "name": "Light",
-      "id": "light",
+      "name": "Ebony",
+      "id": "ebony",
+      "color": "#011432"
+    }, {
+      "name": "Jellyfin Original",
+      "id": "dark",
+      "color": "#202020"
+    }, {
+      "name": "Song",
+      "id": "Song",
       "color": "#303030"
-    }, {
-      "name": "Purple Haze",
-      "id": "purplehaze",
-      "color": "#000420"
-    }, {
-      "name": "WMC",
-      "id": "wmc",
-      "color": "#0c2450"
     }
   ],
-  "menuLinks": [],
+  "menuLinks": [
+    {
+      "name": "GO - 全功能目錄",
+      "icon": "fa-square-caret-left",
+      "url": "https://go.selected.plus"
+    },
+    {
+      "name": "wiki - 支援與說明資料",
+      "icon": "fa-square-caret-left",
+      "url": "https://wiki.selected.plus"
+    },
+    {
+      "name": "my account - 帳號設定",
+      "icon": "fa-square-caret-left",
+      "url": "https://ac.selected.plus/my/account"
+    },
+    {
+      "name": "plus news+ - 通知發佈頻道 (Telegram)",
+      "icon": "fa-telegram",
+      "url": "https://link.selected.plus/mm-tgpnp"
+    },
+    {
+     "name": "贊助 SELECTEDplus",
+     "icon": "fa-circle-dollar-to-slot",
+    "url": "https://buy.stripe.com/5kA6qq7vdgFA"
+    } 
+  ],
   "servers": [],
   "plugins": [
     "playAccessValidation/plugin",

@@ -1,66 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="preload" dir="ltr">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <link rel="manifest" href="manifest.json">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta http-equiv="X-UA-Compatibility" content="IE=Edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Jellyfin">
+    <meta name="application-name" content="plus">
     <meta name="robots" content="noindex, nofollow, noarchive">
     <meta name="referrer" content="no-referrer">
-
     <meta id="themeColor" name="theme-color" content="#202020">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../node_modules/@jellyfin/ux-web/favicons/touchicon.png">
-    <link rel="shortcut icon" href="../node_modules/@jellyfin/ux-web/favicons/favicon.ico">
-    <meta name="msapplication-TileImage" content="../node_modules/@jellyfin/ux-web/favicons/touchicon144.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileImage" content="39209dd2362c0db7c673.png">
     <meta name="msapplication-TileColor" content="#333333">
-
-    <title>Jellyfin</title>
-
-    <style>
-        .transparentDocument,
-        .backgroundContainer-transparent:not(.withBackdrop) {
-            background: none !important;
-            background-color: transparent !important;
+    <title>SELECTEDplus</title>
+        <style>
+        .backgroundContainer-transparent:not(.withBackdrop),
+        .transparentDocument {
+            background: 0 0 !important;
+            background-color: transparent !important
         }
 
         .layout-tv .mouseIdle,
-        .layout-tv .mouseIdle button,
-        .layout-tv .mouseIdle select,
-        .layout-tv .mouseIdle input,
-        .layout-tv .mouseIdle textarea,
         .layout-tv .mouseIdle a,
+        .layout-tv .mouseIdle button,
+        .layout-tv .mouseIdle input,
         .layout-tv .mouseIdle label,
-        .transparentDocument .mouseIdle,
-        .transparentDocument .mouseIdle button,
-        .transparentDocument .mouseIdle select,
-        .transparentDocument .mouseIdle input,
-        .transparentDocument .mouseIdle textarea,
-        .transparentDocument .mouseIdle a,
-        .transparentDocument .mouseIdle label,
+        .layout-tv .mouseIdle select,
+        .layout-tv .mouseIdle textarea,
         .screensaver-noScroll.mouseIdle,
-        .screensaver-noScroll.mouseIdle button,
-        .screensaver-noScroll.mouseIdle select,
-        .screensaver-noScroll.mouseIdle input,
-        .screensaver-noScroll.mouseIdle textarea,
         .screensaver-noScroll.mouseIdle a,
-        .screensaver-noScroll.mouseIdle label {
-            cursor: none !important;
+        .screensaver-noScroll.mouseIdle button,
+        .screensaver-noScroll.mouseIdle input,
+        .screensaver-noScroll.mouseIdle label,
+        .screensaver-noScroll.mouseIdle select,
+        .screensaver-noScroll.mouseIdle textarea,
+        .transparentDocument .mouseIdle,
+        .transparentDocument .mouseIdle a,
+        .transparentDocument .mouseIdle button,
+        .transparentDocument .mouseIdle input,
+        .transparentDocument .mouseIdle label,
+        .transparentDocument .mouseIdle select,
+        .transparentDocument .mouseIdle textarea {
+            cursor: none !important
         }
 
         .preload {
-            background-color: #101010;
+            background-color: #101010
         }
 
         .hide,
         .mouseIdle .hide-mouse-idle,
         .mouseIdle-tv .hide-mouse-idle-tv {
-            display: none !important;
+            display: none !important
         }
 
         .mainDrawerHandle {
@@ -68,23 +66,146 @@
             top: 0;
             bottom: 0;
             z-index: 1;
-            width: 0.8em;
+            width: .8em;
             padding-left: env(safe-area-inset-left);
-            caret-color: transparent;
+            caret-color: transparent
         }
 
-        [dir="ltr"] .mainDrawerHandle {
-            left: 0;
+        [dir=ltr] .mainDrawerHandle {
+            left: 0
         }
 
-        [dir="rtl"] .mainDrawerHandle {
-            left: 0;
+        [dir=rtl] .mainDrawerHandle {
+            left: 0
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .splashLogo {
+            animation: fadein .5s;
+            width: 30%;
+            height: 30%;
+            background-image: url(assets/img/icon-transparent.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        @media screen and (min-device-width:992px) {
+            .splashLogo {
+                background-image: url(assets/img/banner-light.png)
+            }
         }
     </style>
+    <script defer="defer" src="runtime.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40jellyfin.sdk.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.lodash-es.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40mui.material.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40mui.system.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40mui.icons-material.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40mui.utils.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40tanstack.query-core.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40tanstack.react-query.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.date-fns.esm.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.core-js.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.react-transition-group.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40popperjs.core.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.axios.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.react-dom.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.jquery.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.webcomponents.js.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.resize-observer-polyfill.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.regenerator-runtime.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.jellyfin-apiclient.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.intersection-observer.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.history.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.dompurify.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.react-router.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.react-router-dom.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="node_modules.%40remix-run.router.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="37869.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="main.jellyfin.bundle.js?5472a04be7afaf932b1a"></script>
+    <script defer="defer" src="serviceworker.js?5472a04be7afaf932b1a"></script>
+    <link href="37869.088680d7e7a2eede3618.css?5472a04be7afaf932b1a" rel="stylesheet">
+    <link href="main.jellyfin.7d6eaeb032d03eb0ae47.css?5472a04be7afaf932b1a" rel="stylesheet">
 </head>
+
 <body dir="ltr">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the title is "Jellyfin" before changing it
+            if (document.title === "Jellyfin") {
+                document.title = "SELECTEDplus";
+            }
+    
+            // Create a MutationObserver to prevent any changes to the title
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'childList') {
+                        // Only change the title if it's set to "Jellyfin"
+                        if (document.title === "Jellyfin") {
+                            document.title = "SELECTEDplus";
+                        }
+                    }
+                });
+            });
+    
+            // Observe the document title for changes
+            observer.observe(document.querySelector('title'), { childList: true });
+    
+            // Set up a fallback in case of attempts to change the title through direct assignment
+            Object.defineProperty(document, 'title', {
+                set: function(value) {
+                    // Only allow the title to change if the new value is "Jellyfin"
+                    if (value === "Jellyfin") {
+                        document.querySelector('title').textContent = "SELECTEDplus";
+                    } else {
+                        document.querySelector('title').textContent = value;
+                    }
+                },
+                get: function() {
+                    return document.querySelector('title').textContent;
+                }
+            });
+        });
+    </script>
     <div id="reactRoot">
         <div class="splashLogo"></div>
     </div>
-</body>
+    <script>
+        var timedelay = 1;
+        function delayCheck()
+        {
+        if(timedelay == 5)
+        {
+        $('#footer').fadeOut();
+        timedelay = 1;
+        }
+        timedelay = timedelay+1;
+        }
+        $(document).mousemove(function() {
+        $('#footer').fadeIn();
+        timedelay = 1;
+        clearInterval(_delay);
+        _delay = setInterval(delayCheck, 500);
+        });
+        // page loads starts delay timer
+        _delay = setInterval(delayCheck, 500)
+        </script>
+        <div id="footer"><span></span></div>
+        
+<script plugin="InPlayerEpisodePreview" version="1.3.1.0" src="/InPlayerPreview/ClientScript"></script><script plugin="Jellyscrub" version="2.0.0.0" src="/Trickplay/ClientScript" defer></script></body>
+
 </html>
